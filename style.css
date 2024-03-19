@@ -6,7 +6,7 @@
 }
 
 nav {
-    height: 80px;
+    height: 100px;
     background: #2A9D8F;
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,7 @@ nav {
 .nav-items a {
     color: black;
     transition-duration: 0.5s;
+    padding: 16px;
 }
 
 .nav-items a:hover {
@@ -43,6 +44,9 @@ nav a {
     grid-template-columns: 1fr 1fr;
     height: 95vh;
     padding: 3rem calc((100vw - 1300px) / 2);
+    background-image: url(images/hero-bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -51,7 +55,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: black;
+    color: white;
     padding: 0rem 2rem;
 }
 
@@ -76,13 +80,56 @@ button {
     transition-duration: 0.5s;
 }
 
+
 button:hover {
     background: white;
     transition-duration: 0.5s;
     color: black;
+    text-decoration: none;
 }
 
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+/*.logo img {
+    width: 5rem;
+    padding-top: 0.4rem;
+}
+
+.logo {
+    transition-duration: 0.5s;
+}
+
+.logo:hover {
+    transform: rotate(15deg);
+    transition-duration: 0.5s;
+}
+*/
 
 body {
-    background-color: aqua;
+    background-color: #264653;
+}
+
+.container-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 65vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+
+}
+
+.footer-container {
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    color: white;
 }
